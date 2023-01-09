@@ -8,5 +8,17 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  plugins: [{
+    resolve: `gatsby-plugin-webfonts`,
+    options: {
+      fonts: {
+        google: [
+          {
+            family: "Dancing Script",
+            variants: ["700"],
+          },
+        ]
+      }
+    }
+  }],
 }

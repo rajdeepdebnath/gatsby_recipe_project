@@ -1,15 +1,24 @@
 import React from 'react';
-import {navbar} from '../styles/navbar.module.css';
+import {Link} from 'gatsby';
+import {navbar, navliactive} from '../styles/navbar.module.css';
 
 const Navbar = () => {
   return (
     <div className={navbar}>
         <div>Logo</div>
         <ul>
-            <li>Home</li>
-            <li>Recipes</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/recipe" activeClassName={navliactive}>Recipes</Link>
+            </li>
+            <li>
+              <Link to="/about" activeClassName={navliactive}>About</Link>
+            </li>
+            <li>
+              <Link to="/contact" activeClassName={navliactive}>Contact</Link>
+            </li>
         </ul>
     </div>
   )
