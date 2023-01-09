@@ -46,5 +46,6 @@
 }
 
 .navliactive{
-    background-color: rgb(232, 231, 231);
+    color:rgb(58, 58, 58) !important;
+    text-decoration: underline !important;
 }
