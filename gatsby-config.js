@@ -8,7 +8,11 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [{
+  plugins: [
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    {
     resolve: `gatsby-plugin-webfonts`,
     options: {
       fonts: {
